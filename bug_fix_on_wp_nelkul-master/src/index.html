@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <!-- kiszedtem innen a css-t és a script a html fájl alára raktam biztonság kedvéért-->
+</head>
+<body>
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p >A bolygók darabszáma <span id="osszDB">0</span> </p>
+                </div>
+                <div class="col-md-6">
+                    <p >A bolygók átlagos életkora: <span id="osszAr">0</span></p>
+    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <label for="nev">
+                        Bolygó neve: <br>
+                        <input type="text" name="nev" id="nev">
+                    </label> <br>
+                </div>
+                <div class="col-sm-2">
+                    <label for="ev" >
+                        A bolygó életkora: <br>
+                        <input type="number" name="ev" id="ev">
+    
+                    </label>
+                </div>
+                <div class="col-sm-2">
+                    <label for="ar">
+                        A bolygó ámérője: <br>
+                        <input type="number" name="ar" id="ar">
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <label for="magassag">
+                        A bolygót borító víz aránya: <br>
+                        <input type="number" name="magassag" id="magassag">
+                    </label>
+                </div>
+                <div class="col-md-4">
+                    <label for="felvesz">
+                        <br> 
+                    <input type="button" id="submit" name="felvesz" style="width: 100px;"  value="Felvesz">
+                    </label>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center" id="hiba" style="color: red;"> </div>
+                </div>
+            </div>
+            <script src='index.js'></script>
+</body>
+</html>
